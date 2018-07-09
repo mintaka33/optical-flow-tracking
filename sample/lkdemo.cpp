@@ -46,7 +46,7 @@ int main( int argc, char** argv )
     bool nightMode = false;
 
     help();
-    cv::CommandLineParser parser(argc, argv, "{@input|0|}");
+    cv::CommandLineParser parser(argc, argv, "{@input|../../test/game2.mp4|}");
     string input = parser.get<string>("@input");
 
     if( input.size() == 1 && isdigit(input[0]) )
